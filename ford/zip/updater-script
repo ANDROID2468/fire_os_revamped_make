@@ -1,0 +1,43 @@
+ui_print(" ");
+ui_print(" ");
+ui_print(" ***********************************************");
+ui_print(" *              fire os revamped               *");
+ui_print(" *                                             *");
+ui_print(" *                for  ford                    *");
+ui_print(" *              By ANDROID2468                 *");
+ui_print(" ***********************************************");
+set_progress(0.200000);
+
+ifelse(is_mounted("/system"), unmount("/system"));
+ui_print("Extracting system...");
+ui_print(" ");
+package_extract_file("system.img", "/dev/block/platform/mtk-msdc.0/by-name/system");
+set_progress(0.500000);
+ui_print(" "); ui_print("Extracting boot image...");
+ui_print(" ");
+package_extract_file("boot.img", "/dev/block/platform/mtk-msdc.0/by-name/boot");
+set_progress(0.600000);
+
+#mount
+mount("ext4", "EMMC", "/dev/block/platform/mtk-msdc.0/by-name/system", "/system");
+
+ui_print("Installing apps");
+set_progress(0.500000);
+package_extract_dir("system", "/system");
+
+#ROOT
+ui_print("rooting");
+package_extract_dir("rootzip", "/tmp/rootzip");
+run_program("/sbin/unzip", "/tmp/rootzip/Magisk.zip", "META-INF/com/google/android/*", "-d", "/tmp/rootzip");
+run_program("/sbin/sh", "/tmp/rootzip/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/rootzip/Magisk.zip");
+ui_print(" ");
+
+set_progress(0.800000);
+ui_print(" ");
+#BUSYBOX
+set_progress(0.900000);
+run_program("/tmp/install/bin/backuptool.sh", "restore");
+#UNMOUNT
+ifelse(is_mounted("/system"), unmount("/system"));
+set_progress(1.000000);
+ui_print("Done!");
