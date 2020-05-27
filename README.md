@@ -2,12 +2,14 @@
 
 you will have to provide your own system img luckly I have a download link for them ;)
 
+
+[Android File host](https://www.androidfilehost.com/?w=files&flid=312816)
 # downlowing instructions
 
 ```
-git clone https://github.com/ANDROID2468/build_fireOS_kernel.git -b mt8127
+git clone https://github.com/ANDROID2468/fire_os_revamped_make.git
 
-cd build_fireOS_kernel
+cd fire_os_revamped_make
 ```
 
 ## Building instructions 
