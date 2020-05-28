@@ -103,7 +103,6 @@ sudo rm -rf -v mount/priv-app/moffice_7.1_default_en00105_multidex_217792
 sudo rm -rf -v mount/priv-app/com.amazon.photos.importer
 sudo rm -rf -v mount/priv-app/com.amazon.zico
 sudo rm -rf -v mount/priv-app/com.amazon.kindle.personal_video
-sudo rm -rf -v mount/priv-app/Camera
 
 
 echo ""
