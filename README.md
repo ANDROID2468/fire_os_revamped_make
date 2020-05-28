@@ -1,4 +1,6 @@
 ## Building fire os revamped
+THIS ONLY WORKS IN LINX! I don't plan on making a windows version. you can use WsL (Linux subsystem for windows) if you are on windows...
+oh oops, its is Windows Subsystem for Linux, I forgot microsoft thinks backwords :D .
 
 you will have to provide your own system img luckly I have a download link for them ;)
 
