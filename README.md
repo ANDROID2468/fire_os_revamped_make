@@ -23,18 +23,19 @@ or
 ```
 ./make.sh austin
 ```
-## Adb scripts 
 
-# setupSkip.sh
+# Adb scripts 
 
-[this](https://github.com/ANDROID2468/fire_os_revamped_make/blob/master/system/bin/setupSkip.sh) script skips setup at first boot. 
+## setupSkip.sh
+
+[This](https://github.com/ANDROID2468/fire_os_revamped_make/blob/master/system/bin/setupSkip.sh) script skips setup at first boot. 
 
 To run, type this in terminal/cmd:
 ```
 adb shell sh /system/bin/setupSkip.sh
 ```
 
-# rmAmazon.sh
+## rmAmazon.sh
 [This](https://github.com/ANDROID2468/fire_os_revamped_make/blob/master/system/bin/rmAmazon.sh) script lets you choose what amazon apps to delete that are still on the system.
 
 To run, type this in terminal/cmd:
@@ -42,7 +43,7 @@ To run, type this in terminal/cmd:
 adb shell sh /system/bin/rmAmazon.sh
 ```
 
-# rmXda.sh
+## rmXda.sh
 [This](https://github.com/ANDROID2468/fire_os_revamped_make/blob/master/system/bin/rmXda.sh) script removes xdaLabs 
 
 To run, type this in terminal/cmd:
@@ -50,7 +51,7 @@ To run, type this in terminal/cmd:
 adb shell sh /system/bin/rmXda.sh
 ```
 
-# rmAurora.sh
+## rmAurora.sh
 [This](https://github.com/ANDROID2468/fire_os_revamped_make/blob/master/system/bin/rmAurora.sh) script remove Aurora Store. Aurora Store is a open source play store client.
 
 To run, type this in terminal/cmd:
@@ -58,7 +59,7 @@ To run, type this in terminal/cmd:
 adb shell sh /system/bin/rmAurora.sh
 ```
 
-# rmGapps.sh
+## rmGapps.sh
 [This](https://github.com/ANDROID2468/fire_os_revamped_make/blob/master/system/bin/rmGapps.sh) script removes gapps (if installed).
 
 To run, type this in terminal/cmd:
