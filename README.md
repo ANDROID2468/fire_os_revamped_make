@@ -39,7 +39,7 @@ adb shell sh /system/bin/setupSkip.sh
 
 To run, type this in terminal/cmd:
 ```
-adb shell sh /system/bin/setupSkip.sh
+adb shell sh /system/bin/rmAmazon.sh
 ```
 
 # rmXda.sh
