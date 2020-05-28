@@ -2,8 +2,9 @@
 
 you will have to provide your own system img luckly I have a download link for them ;)
 
-
 [Android File host](https://www.androidfilehost.com/?w=files&flid=312816)
+you will have to rename system.img to [model].img. (change [model] to ford or austin)
+
 # downlowing instructions
 
 ```
@@ -11,6 +12,7 @@ git clone https://github.com/ANDROID2468/fire_os_revamped_make.git
 
 cd fire_os_revamped_make
 ```
+place [model].img into fire_os_revamped_make folder
 
 ## Building instructions 
 

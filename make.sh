@@ -35,16 +35,17 @@ fi
 mkdir out
 
 # Checking if the system.img is in the root dir
-if [ ! -f system.img ];
+if [ ! -f ${model}.img ];
 then
-    echo "no system img in root dir!"
+    echo "${model}'s system img is not in the root dir!"
+    echo "Make shure that you rename system.img to ${model}.img"
     echo "leaving..."
     exit 
 fi
 
 # Copy system.img to out
 echo "copying system.img to out"
-cp -r system.img out/
+cp -r ${model}.img out/system.img
 
 # Mounting system
 echo "Mounting system.img to mount/"
@@ -151,5 +152,6 @@ zip -r rev_${model}_$fileDate *
 cd .. 
 cd ..
 cp -r out/zip/rev_${model}_$fileDate.zip out/
-echo "  done"
-echo "the zip is in the out dir"
+echo "done"
+echo "zip name: rev_${model}_$fileDate.zip"
+echo "The zip is in the out dir"
