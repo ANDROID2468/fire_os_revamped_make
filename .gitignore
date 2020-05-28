@@ -1,7 +1,6 @@
-out/
+out
 mount
-system.img
-ford.img
-austin.img
 *.zip
+*.img
 ! Magisk.zip
+! boot.img
