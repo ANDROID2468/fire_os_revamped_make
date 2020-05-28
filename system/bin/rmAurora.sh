@@ -11,6 +11,7 @@ fi
 
 echo "mounting system as RW"
 mount -o rw,remount /system
+echo "deleteing app..."
 rm -rf -v /system/priv-app/AuroraStore_*.apk
 
 echo "rebooting..."

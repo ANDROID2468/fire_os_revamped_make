@@ -27,7 +27,7 @@ then
     exit
 fi
 
-# Deleteing out if exitis
+# Deleting out if exitis
 if [ -d out ];
 then
     rm -rf out
@@ -65,15 +65,6 @@ sudo rm -rf -v mount/priv-app/com.amazon.firelauncher
 sudo rm -rf -v mount/priv-app/DeviceSoftwareOTA
 sudo rm -rf -v mount/priv-app/com.amazon.kindle.otter.oobe.forced.ota
 
-# Remove setup wizard
-# sudo rm -rf -v mount/priv-app/com.amazon.kindle.otter.oobe
-
-# Alexa
-#sudo rm -rf -v mount/priv-app/com.amazon.dee.app
-#sudo rm -rf -v mount/priv-app/amazon.alexa.tablet
-#sudo rm -rf -v mount/priv-app/com.amazon.vans.alexatabletshopping.app
-#sudo rm -rf -v mount/priv-app/SpeechUi
-
 # Remove Ads
 sudo rm -rf -v mount/priv-app/com.amazon.kindle.kso
 sudo rm -rf -v mount/priv-app/AdvertisingIdSettings
@@ -94,7 +85,6 @@ sudo rm -rf -v mount/priv-app/MetricsService
 sudo rm -rf -v mount/priv-app/DeviceMessagingAndroid
 sudo rm -rf -v mount/priv-app/com.amazon.kor.demo
 sudo rm -rf -v mount/app/Music
-#sudo rm -rf -v mount/priv-app/com.amazon.mp3
 sudo rm -rf -v mount/priv-app/com.amazon.cloud9
 sudo rm -rf -v mount/app/jp.co.omronsoft.iwnnime.languagepack.zhcn_az
 sudo rm -rf -v mount/priv-app/com.amazon.kcp.tutorial
@@ -106,18 +96,21 @@ sudo rm -rf -v mount/priv-app/com.amazon.geo.client.maps
 sudo rm -rf -v mount/priv-app/com.goodreads.kindle
 sudo rm -rf -v mount/priv-app/FireRecessProxy
 sudo rm -rf -v mount/app/jp.co.omronsoft.iwnnime.mlaz
-#sudo rm -rf -v mount/priv-app/com.amazon.tahoe
-#sudo rm -rf -v mount/app/PinyinIME.apk
+sudo rm -rf -v mount/priv-app/com.amazon.tahoe
+sudo rm -rf -v mount/app/PinyinIME.apk
 sudo rm -rf -v mount/priv-app/moffice_7.1_default_en00105_multidex_217792
-#sudo rm -rf -v mount/priv-app/com.amazon.gloria.graphiq
-#sudo rm -rf -v mount/priv-app/com.amazon.gloria.smarthome
-#sudo rm -rf -v mount/priv-app/com.amazon.glorialist
+sudo rm -rf -v mount/priv-app/com.amazon.photos.importer
+sudo rm -rf -v mount/priv-app/com.amazon.zico
+sudo rm -rf -v mount/priv-app/com.amazon.kindle.personal_video
+sudo rm -rf -v mount/priv-app/Camera
+
 
 echo ""
 
 # Building zip
 mkdir -p out/zip/META-INF/com/google/android/
 mkdir out/zip/system/
+mkdir -p out/zip/system/framework/
 # Copy apk's and other stuff
 echo "copying files..."
 cp -R -v system/* out/zip/system/
@@ -127,13 +120,15 @@ if [ "${model}" = "austin" ];
 then
     cp -r austin/boot.img out/zip/
     cp -r austin/zip/* out/zip/META-INF/com/google/android/
+    cp -r -v austin/framework-res.apk out/zip/system/framework/
     sudo cp -r austin/build.prop mount/
 fi
 if [ "${model}" = "ford" ];
 then
-    cp -r ford/boot.img out/zip/
-    cp -r ford/zip/* out/zip/META-INF/com/google/android/
-    sudo cp -r ford/build.prop mount/
+    cp -r -v ford/boot.img out/zip/
+    cp -r -v ford/zip/* out/zip/META-INF/com/google/android/
+    cp -r -v ford/framework-res.apk out/zip/system/framework/
+    sudo cp -r -v ford/build.prop mount/
 fi
 
 # Print build date to build.prop
