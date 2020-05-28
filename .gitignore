@@ -1,3 +1,7 @@
 out/
 mount
 system.img
+ford.img
+austin.img
+*.zip
+! Magisk.zip
