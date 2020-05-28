@@ -11,7 +11,7 @@ set_progress(0.200000);
 ifelse(is_mounted("/system"), unmount("/system"));
 ui_print("Extracting system...");
 ui_print(" ");
-package_extract_file("system_new.img", "/dev/block/platform/mtk-msdc.0/by-name/system");
+package_extract_file("system.img", "/dev/block/platform/mtk-msdc.0/by-name/system");
 set_progress(0.700000);
 ui_print(" "); ui_print("Extracting boot image...");
 ui_print(" ");
