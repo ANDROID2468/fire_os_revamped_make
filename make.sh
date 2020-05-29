@@ -103,7 +103,7 @@ sudo rm -rf -v mount/priv-app/moffice_7.1_default_en00105_multidex_217792
 sudo rm -rf -v mount/priv-app/com.amazon.photos.importer
 sudo rm -rf -v mount/priv-app/com.amazon.zico
 sudo rm -rf -v mount/priv-app/com.amazon.kindle.personal_video
-
+sudo rm -rf -v mount/priv-app/Camera
 
 echo ""
 
@@ -121,7 +121,7 @@ then
     cp -r austin/boot.img out/zip/
     cp -r austin/zip/* out/zip/META-INF/com/google/android/
     cp -r -v austin/framework-res.apk out/zip/system/framework/
-    sudo cp -r austin/build.prop mount/
+    sudo cp -r -v austin/build.prop mount/
 fi
 if [ "${model}" = "ford" ];
 then
@@ -148,9 +148,9 @@ sudo umount mount/
 cp -r out/system.img out/zip/
 cd out/zip/
 zip -r rev_${model}_$fileDate *
-cd .. 
 cd ..
-cp -r out/zip/rev_${model}_$fileDate.zip out/
+cp -r zip/rev_${model}_$fileDate.zip ../
 echo "done"
 echo "zip name: rev_${model}_$fileDate.zip"
-echo "The zip is in the out dir"
+echo "The zip is in the root dir"
+
