@@ -1,0 +1,7 @@
+
+id=setupSkip
+name=setupSkip
+version=v1.0
+versionCode=1
+author=ANDROID2468
+description=skips setup at first boot

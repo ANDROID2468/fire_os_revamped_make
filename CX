@@ -1,0 +1,132 @@
+/system # cd app
+/system/app # ls
+AmazonWebView                 PacProcessor
+BlackPlayer                   PicoTts
+Bluetooth                     PinyinIME
+Bromite                       TabletCaptivePortalLogin
+CertInstaller                 UnifiedSettingsProvider
+DocumentsUI                   UserDictionaryProvider
+HTMLViewer                    WhiteListedUrlProvider
+KeyChain                      XdaLabs
+LatinIME                      fdrw
+MiXplorer                     jp.co.omronsoft.iwnnime.mlaz
+MopriaPlugin
+/system/app # cd ..
+/system # cd priv-app/
+/system/priv-app # ls
+AmazonKKWebViewLib
+AmazonPlatform-release
+AwvMetricsService
+BackupRestoreConfirmation
+BluetoothInternals
+Broweb
+Camera
+ConnectivityDiag
+ContentSupportProvider
+CrashManager
+CredentialLockerAndroid-tablet-release
+DefaultContainerService
+DeviceBackupAndRestore-release
+DeviceBackupAndRestoreInternalSDK-release
+DeviceClientPlatformContractsFramework
+DeviceMessagingAndroidInternalSDK
+DeviceMessagingAndroidSDK
+DeviceSoftwareOTAContracts
+DownloadProvider
+DownloadProviderUi
+ExternalStorageProvider
+FireApplicationCompatibilityEnforcer
+FireApplicationCompatibilityEnforcerSDK
+FireOsMiddlewareDebugApp
+FireStorageManager
+FireTabletSettings
+FusedLocation
+IvonaTTS
+IvonaTtsOrchestrator
+Lawnchair
+LogManager-logd
+ManagedProvisioning
+MapsAPISupportLibrary-release-signed
+MediaProvider
+MetricsApi
+OneTimeInitializer
+PackageInstaller
+PrintSpooler
+ProxyHandler
+RemoteSettingsAndroid
+RemoteSettingsInternalSDK
+SettingsProvider
+SharedStorageBackup
+Shell
+SpeechInteractionManager
+SpeechUiTablet
+SystemUI
+SystemUpdatesUI
+UnifiedShareActivityChooser
+VpnDialogs
+WallpaperCropper
+amazon.alexa.tablet
+amazon.jackson-19
+com.amazon.accessorynotifier
+com.amazon.avod
+com.amazon.calculator
+com.amazon.cloud9.systembrowserprovider
+com.amazon.communication
+com.amazon.communication.discovery
+com.amazon.dee.app
+com.amazon.device.bluetoothdfu
+com.amazon.device.sync.sdk.internal
+com.amazon.digital.asset.ownership.app
+com.amazon.dp.contacts
+com.amazon.dp.logger
+com.amazon.dynamicupdationservice
+com.amazon.firepowersettings
+com.amazon.frameworksettings
+com.amazon.h2clientservice
+com.amazon.h2settingsfortablet
+com.amazon.identity.auth.device.authorization
+com.amazon.imp
+com.amazon.kindle
+com.amazon.kindle.cms-service
+com.amazon.kindle.devicecontrols
+com.amazon.kindle.otter.oobe
+com.amazon.kindle.otter.settings
+com.amazon.kindle.personal_video
+com.amazon.kindle.rdmdeviceadmin
+com.amazon.kindle.unifiedSearch
+com.amazon.kindleautomatictimezone
+com.amazon.legalsettings
+com.amazon.ods.kindleconnect
+com.amazon.parentalcontrols
+com.amazon.photos
+com.amazon.photos.importer
+com.amazon.platformsettings
+com.amazon.pm
+com.amazon.precog
+com.amazon.securitysyncclient
+com.amazon.sharingservice.android.client.proxy.release
+com.amazon.socialplatform
+com.amazon.tahoe
+com.amazon.tcomm
+com.amazon.unifiedsharefacebook
+com.amazon.unifiedsharesinaweibo
+com.amazon.vans.alexatabletshopping.app
+com.amazon.venezia
+com.amazon.weather
+com.amazon.webapp
+com.amazon.windowshop
+com.amazon.zico
+com.android.calendar
+com.android.contacts
+com.android.deskclock
+com.android.email
+com.android.providers.calendar
+com.android.providers.contacts
+com.audible.application.kindle
+com.nokia.odnp.service
+logan
+marketplace_service_receiver
+moffice_7.1_default_en00105_multidex_217792
+shipmode
+sync-provider_ipc-release
+sync-service-fireos-release

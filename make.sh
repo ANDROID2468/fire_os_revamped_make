@@ -118,9 +118,11 @@ echo ""
 echo "copying files for $model..."
 if [ "${model}" = "austin" ];
 then
-    cp -r austin/boot.img out/zip/
-    cp -r austin/zip/* out/zip/META-INF/com/google/android/
+    cp -r -v austin/boot.img out/zip/
+    cp -r -v austin/zip/* out/zip/META-INF/com/google/android/
     cp -r -v austin/framework-res.apk out/zip/system/framework/
+    cp -r -v austin/services.jar out/zip/system/framework/
+    cp -r -v austin/org.spoofing.apk out/zip/system/framework/
     sudo cp -r -v austin/build.prop mount/
 fi
 if [ "${model}" = "ford" ];
@@ -128,6 +130,8 @@ then
     cp -r -v ford/boot.img out/zip/
     cp -r -v ford/zip/* out/zip/META-INF/com/google/android/
     cp -r -v ford/framework-res.apk out/zip/system/framework/
+    cp -r -v ford/services.jar out/zip/system/framework/
+    cp -r -v ford/org.spoofing.apk out/zip/system/framework/
     sudo cp -r -v ford/build.prop mount/
 fi
 

@@ -172,3 +172,6 @@ persist.sys.usb.config=mtp,adb
 ro.setupwizard.mode=DISABLED 
 ro.debuggable=1
 app.setupwizard.disable=1
+
+#ADB on recovery
+service.adb.root=1

@@ -20,9 +20,9 @@ do
  rm -rf -v /system/priv-app/amazon.alexa.tablet
  rm -rf -v /system/priv-app/com.amazon.vans.alexatabletshopping.app
  rm -rf -v /system/priv-app/SpeechUi
- rm -rf -v mount/priv-app/com.amazon.gloria.graphiq
- rm -rf -v mount/priv-app/com.amazon.gloria.smarthome
- rm -rf -v mount/priv-app/com.amazon.glorialist
+ rm -rf -v /system/priv-app/com.amazon.gloria.graphiq
+ rm -rf -v /system/priv-app/com.amazon.gloria.smarthome
+ rm -rf -v /system/priv-app/com.amazon.glorialist
  break
  ;;
      [nN][oO]|[nN])
