@@ -196,6 +196,50 @@ do
  esac
 done
 
+# amazon email
+while true
+do
+ echo "Do you wish to delete email? [Y/n] " 
+ read input
+ 
+ case $input in
+     [yY][eE][sS]|[yY])
+ echo "deleting amazon email..."
+ rm -rf -v /system/priv-app/com.email-stub
+ break
+ ;;
+     [nN][oO]|[nN])
+ echo ""
+ break
+        ;;
+     *)
+ echo "Invalid input..."
+ ;;
+ esac
+done
+
+# amazon calculator
+while true
+do
+ echo "Do you wish to delete email? [Y/n] " 
+ read input
+ 
+ case $input in
+     [yY][eE][sS]|[yY])
+ echo "deleting calculator..."
+ rm -rf -v /system/priv-app/com.email-stub
+ break
+ ;;
+     [nN][oO]|[nN])
+ echo ""
+ break
+        ;;
+     *)
+ echo "Invalid input..."
+ ;;
+ esac
+done
+
 #reboot
 echo "rebooting..."
 reboot
